@@ -8,7 +8,7 @@
         fclose($file);
         $obj = json_decode($contenu, True);
         foreach ($obj as $code=>$list){
-            if ($_POST['code'] == $code){
+            if (strtoupper($_POST['code']) == $code){
                 $_SESSION['code'] = strtoupper($_POST['code']);
             }            
         }
@@ -33,15 +33,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Le jeu</title>
+    <style>
+#div1, #div2, #div3 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+</style>
 </head>
 <body>
     <?php
         if (isset($_SESSION['etat']) and $_SESSION['etat'] != "off"){
             require_once("startedGame.php");
-            unset($_SESSION['etat']);
-            unset($_SESSION['code']);
-            unset($_SESSION['name']);
-            unset($_SESSION['first']);
+            //unset($_SESSION['etat']);
+            //unset($_SESSION['code']);
+            //unset($_SESSION['name']);
+            //unset($_SESSION['first']);
         } elseif (isset($_SESSION['name'])) {
             require_once("waitingScreen.php");
             
