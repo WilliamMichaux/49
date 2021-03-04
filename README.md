@@ -7,5 +7,4 @@ Les règles sont les suivantes : il faut toujours avoir 4 cartes en main. Certai
 
 Lorsqu'un joueur joue son tour, il doit annoncer sa carte ainsi que le nombre de points quelle représente. Il doit ensuite dire le nombre de points totaux de la partie. Si il se trompe.. Il boit. Si le joueur dépasse une dizaine il devra boire le nombre de gorgé que représente la dizaine (10 -> 1 gorgé, 20 -> 2 gorgés,.. TIA compris)  
 
-### Idées/Trucs/Astuces/Blagues
-* Prévoir une version hardcore ?
+
